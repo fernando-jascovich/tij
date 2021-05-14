@@ -1,0 +1,14 @@
+shadow = false  # Don't draw shadows around stacked views
+borders = "simple"  # Alternatives are "none" and "outset"
+
+[colors]
+    background = "black"
+    shadow     = "black"
+    view       = "black"
+    primary   = "white"
+    secondary = "gray"
+    tertiary  = "cyan"
+    title_primary   = "cyan"
+    title_secondary = "red"
+    highlight          = "green"
+    highlight_inactive = "gray"
