@@ -1,5 +1,6 @@
 mod app;
 mod view;
+mod conf;
 
 pub fn run() {
     let mut app = cursive::default();

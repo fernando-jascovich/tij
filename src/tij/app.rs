@@ -18,7 +18,11 @@ fn conf_edit() -> Dialog {
 }
 
 fn conf_reset(app: &mut Cursive) {
-    app.add_layer(Dialog::info("Not implemented yet, sorry."))
+    let layer = match super::conf::reset() {
+        Ok(_) => Dialog::info("Successfuly resetted your conf!"),
+        Err(e) => Dialog::info(e.to_string())
+    };
+    app.add_layer(layer)
 }
 
 fn menu(app: &mut CursiveRunnable) {
